@@ -1,0 +1,26 @@
+{
+  "nama": [
+    {
+      "depan": "Herdi",
+      "belakang": "Ardana"
+    },
+    {
+      "depan": "Iqnaz",
+      "belakang": "Nadhif"
+    },
+    {
+      "depan": "Kamal",
+      "belakang": "Maulaazka Sidhqi"
+    },
+    {
+      "depan": "Mochamad",
+      "belakang": "Rizky Evan Ramadhan"
+    },
+    {
+      "depan": "Rahman",
+      "belakang": "Ar Rasyid"
+    }
+  ],
+  "nim": [ 1302210078, 1302210104, 1302210032, 1302213058, 1302213088],
+    "fakultas": "informatika"
+}
