@@ -13,11 +13,11 @@
 
 public class DataMahasiswa_1302210104<T>
 {
-    public Nama nama { get; set; }
-    public T nim { get; set; }
+    public List<Nama> nama { get; set; }
+    public List<T> nim { get; set; }
     public string fakultas { get; set; }
 
-    public DataMahasiswa_1302210104(Nama nama, T nim, string fakultas)
+    public DataMahasiswa_1302210104(List<Nama> nama, List<T> nim, string fakultas)
     {
         this.nama = nama;
         this.nim = nim;
