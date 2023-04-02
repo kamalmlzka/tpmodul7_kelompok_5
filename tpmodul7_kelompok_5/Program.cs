@@ -14,6 +14,13 @@ public class Program
         string hasilbaca = File.ReadAllText(posisifolder + "\\" + filename);
         return JsonSerializer.Deserialize<KuliahMahasiswa_1302210078>(hasilbaca);
     }
+    public static Dosen1 readJSONdosen(string filename)
+    {
+        string posisifolder = ".";
+        string hasilbaca = File.ReadAllText(posisifolder + "\\" + filename);
+        return JsonSerializer.Deserialize<Dosen1>(hasilbaca);
+
+    }
 
     private static void Main(string[] args)
     { 
@@ -25,10 +32,13 @@ public class Program
         Console.WriteLine();
 
         KuliahMahasiswa_1302210078 KM = readJSON("tp7_2_1302210078.json");
-        for (int i = 0; i < KM.courses.Count; i++)
+        Dosen1 Dospeng = readJSONdosen("tp7_3_1302213058.json");
+        for (int i = 0; i < KM.courses.Count;i++)
         {
-            Console.WriteLine("MK " + (i + 1) + " " + KM.courses[i].code + " - " + KM.courses[i].name);
+            Console.WriteLine("MK " + (i + 1) + " " + KM.courses[i].code + " - " + KM.courses[i].name + " (SE-45-03) " +"["+ Dospeng.Dosen[i].CoDos + "]");
         }
+        for (int i = 0; i < Dospeng.Dosen.Count; i++) { }
+
     }
     
     

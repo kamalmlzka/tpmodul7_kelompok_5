@@ -9,7 +9,8 @@ public class KuliahMahasiswa_1302210078
 	{
 		this.courses = Course;
 	}
-	public KuliahMahasiswa_1302210078() { }
+	
+    public KuliahMahasiswa_1302210078() { }
 }
 
 public class Courses
@@ -23,5 +24,24 @@ public class Courses
 		this.name = name;
 		this.code = code;
 	}
-}
 
+}
+public class Dosen1
+{
+    public List<CodeDosen> Dosen { get; set; }
+
+    public Dosen1() { }
+    public Dosen1(List<CodeDosen> CoDos)
+    {
+        this.Dosen = CoDos;
+    }
+}
+public class CodeDosen
+{
+    public string CoDos { get; set; }
+    public CodeDosen() { }
+    public CodeDosen(string coDos)
+    {
+        CoDos = coDos;
+    }
+}
