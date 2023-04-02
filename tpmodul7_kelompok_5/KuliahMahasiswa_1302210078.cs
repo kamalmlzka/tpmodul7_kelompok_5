@@ -45,3 +45,24 @@ public class CodeDosen
         CoDos = coDos;
     }
 }
+    public class RuanganKelas
+    {
+        public List<ruangKelas> Ruangan { get; set; }
+
+        public RuanganKelas() { }
+        public RuanganKelas(List<ruangKelas> noRuangans)
+    {
+        this.Ruangan = noRuangans;
+    }
+
+}
+
+    public class ruangKelas
+{
+    public string NoRuangan { get; set; }
+    public ruangKelas() { }
+    public ruangKelas(string noRuangans)
+    {
+        NoRuangan = noRuangans;
+    }
+}
